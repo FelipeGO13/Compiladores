@@ -1,5 +1,10 @@
 # Compiladores
 UFABC MC3201 - Compiladores - Projeto Final
+- Desenvolvido por:
+   * Felipe Gabriel Osorio
+   * Vitor Gustavo Ferreira
+   * Vivian Tanaka
+
 Especificações:
  - Possui 5 tipos de variáveis: int (inteiro), real e texto (String), array e matriz;
  - Possui estruturar if..else, que recebe operação relacional ou valor booleano (true/false)
