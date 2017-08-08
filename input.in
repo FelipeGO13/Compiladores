@@ -1,0 +1,68 @@
+programa
+    declare 
+        int a,b,f,g;
+        real c,e;
+        texto d;
+        array x;
+        matriz y,z;
+    inicio
+        d = "Teste";
+        a = 10;
+        b = 1000;
+        c = 11.2;
+        e = 1/2+5*2+2*3*2+1-3+2*c;
+        x = {1,2,3};
+        y = {{1,2,3},{4,5,6}};
+        z = {{1,1,1},{2,2,2}};
+
+        escreva "Testeasd";
+        escreva a;
+        
+        escreva "Teste metodo para impressao de array ou matriz";
+        imprimematriz y;
+        
+        escreva "Teste metodo para soma de array ou matriz";
+        somamatrizes y,z;
+        
+        escreva "Teste metodo para adicao de um numero a um array ou matriz";
+        adicionanum x,50000;
+        
+        escreva "Teste metodo para multiplicacao de um numero a um array ou matriz";
+        multmatriz z,1.5;
+      
+        escreva "Teste estrutura if else com operacao relacional como condicao";
+        se (3 < b) entao
+            inicio
+                escreva "Teste If";
+            fim
+        senao
+            inicio
+                escreva "Teste Else";
+                g = 2;
+            fim
+        fimSe
+        
+        escreva "Teste estrutura if else com valor booleano como condicao";
+        se (true) entao
+            inicio
+                escreva "Teste If";
+            fim
+        fimSe
+        
+        escreva "Teste estrutura while com operacao relacional como condicao";
+        enquanto (a>3) entao
+            inicio
+                escreva "Teste While";
+                f = 4;
+                a = (a - 1);
+            fim
+        fimEnq
+        
+        leia a;
+        escreva a;
+        
+        leia d;
+        escreva d;
+    fim
+    
+fimPrograma

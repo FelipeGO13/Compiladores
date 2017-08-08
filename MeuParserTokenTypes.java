@@ -1,0 +1,51 @@
+// $ANTLR 2.7.6 (2005-12-22): "gramatica.g" -> "MeuParser.java"$
+
+public interface MeuParserTokenTypes {
+	int EOF = 1;
+	int NULL_TREE_LOOKAHEAD = 3;
+	int LITERAL_programa = 4;
+	int LITERAL_fimPrograma = 5;
+	int LITERAL_declare = 6;
+	int LITERAL_int = 7;
+	int ID = 8;
+	int VIRG = 9;
+	int PV = 10;
+	int LITERAL_real = 11;
+	int LITERAL_texto = 12;
+	int LITERAL_array = 13;
+	int LITERAL_matriz = 14;
+	int LITERAL_inicio = 15;
+	int LITERAL_fim = 16;
+	int EQ = 17;
+	int STRING = 18;
+	int INT = 19;
+	int REAL = 20;
+	int ARRAY = 21;
+	int MATRIZ = 22;
+	int LITERAL_leia = 23;
+	int LITERAL_escreva = 24;
+	int LITERAL_se = 25;
+	int AP = 26;
+	int OPREL = 27;
+	int BOOLEAN = 28;
+	int FP = 29;
+	int LITERAL_entao = 30;
+	int LITERAL_senao = 31;
+	int LITERAL_fimSe = 32;
+	int LITERAL_enquanto = 33;
+	int LITERAL_fimEnq = 34;
+	int LITERAL_imprimematriz = 35;
+	int LITERAL_somamatrizes = 36;
+	int LITERAL_adicionanum = 37;
+	int LITERAL_multmatriz = 38;
+	int OPARIT1 = 39;
+	int OPARIT2 = 40;
+	int WS = 41;
+	int REAL_OU_INT = 42;
+	int PF = 43;
+	int ASPAS = 44;
+	int AC = 45;
+	int FC = 46;
+	int AB = 47;
+	int FB = 48;
+}
