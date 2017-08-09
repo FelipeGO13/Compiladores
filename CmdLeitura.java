@@ -14,10 +14,6 @@ public class CmdLeitura extends Comando{
         this.tipo = tipo;
     }
   
-    
-    public void run(){
-        
-    }
     public String writeCode(){
         StringBuilder str = new StringBuilder();
         switch (tipo){

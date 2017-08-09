@@ -12,10 +12,6 @@ public class CmdSomaMatrizes extends Comando{
         array2 = parts[1];
     }
 
-    public void run(){
-        
-    }
-    
     public void setTipo(int tipo){
         this.tipo = tipo;
     }

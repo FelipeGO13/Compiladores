@@ -22,6 +22,31 @@ public class Variavel{
         this.valor = null;
     }
     
+    public String getNomeTipo(int tipo){
+        String nomeTipo;
+        switch(tipo){
+            case INT:
+                nomeTipo = "Inteiro";
+                break;
+            case REAL:
+                nomeTipo = "Real";
+                break;
+            case STRING:
+                nomeTipo = "Texto";
+                break;
+            case ARRAY:
+                nomeTipo = "Array";
+                break;
+            case MATRIZ:
+                nomeTipo = "Matriz";
+                break;
+            default:
+                nomeTipo = "Nao encontrado";
+                break;
+        }
+            return nomeTipo;  
+    }
+    
     public void setId(String id){
         this.id = id;
     } 

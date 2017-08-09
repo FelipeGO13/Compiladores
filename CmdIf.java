@@ -29,9 +29,6 @@ public class CmdIf extends Comando{
         this.mode = mode;
     }
     
-    public void run(){
-        
-    }
     public String writeCode(){
         StringBuilder str = new StringBuilder();
         str.append("if (").append(logicalExpr).append("){\n");

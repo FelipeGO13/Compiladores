@@ -7,9 +7,6 @@ public class CmdDeclaracao extends Comando{
         this.content = content;
     }
 
-    public void run(){
-        
-    }
     public String writeCode(){
         return content+";\n" ;
     }

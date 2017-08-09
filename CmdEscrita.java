@@ -6,9 +6,6 @@ public class CmdEscrita extends Comando{
         this.content = content;
     }
 
-    public void run(){
-        
-    }
     public String writeCode(){
         return "System.out.println("+content+");\n" ;
     }

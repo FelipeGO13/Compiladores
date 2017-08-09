@@ -16,10 +16,6 @@ public class CmdWhile extends Comando{
         this.commandList.add(comando);
     }
     
-    public void run(){
-        
-    }
-    
     public String writeCode(){
         StringBuilder str = new StringBuilder();
         str.append("while (").append(logicalExpr).append("){\n");

@@ -10,14 +10,8 @@ public class CmdAdicionaNum extends Comando{
         String[] parts = content.split("\\|");
         array1 = parts[0];
         num    = parts[1];
-        System.out.println(parts.length);
-        
     }
 
-    public void run(){
-        
-    }
-    
     public void setTipo(int tipo){
         this.tipo = tipo;
     }

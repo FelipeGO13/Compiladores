@@ -46,6 +46,8 @@ public class MeuParser extends antlr.LLkParser       implements MeuParserTokenTy
             v.setId(id);
             symbolTable.put(v.getId(), v);
             varList.add(v);
+        } else {
+            throw new RuntimeException("Variavel ja declarada: " + id);
         }
     }
      
@@ -438,7 +440,7 @@ public MeuParser(ParserSharedInputState state) {
 						else if (symbolTable.get(id.getText()).getTipo() == 2 && tipoExpr == 2)
 						symbolTable.get(id.getText()).setValor(result);
 						else
-						throw new RuntimeException("Tipo invalido: " + id.getText());
+						throw new RuntimeException("Tipo invalido: " + id.getText() + " é " + symbolTable.get(id.getText()).getNomeTipo(symbolTable.get(id.getText()).getTipo()) );
 						
 						atribHelper(id.getText());
 						
@@ -453,7 +455,7 @@ public MeuParser(ParserSharedInputState state) {
 						else if (symbolTable.get(id.getText()).getTipo() == 5)
 						symbolTable.get(id.getText()).setValor(LT(0).getText());
 						else
-						throw new RuntimeException("Tipo invalido: " + id.getText());
+						throw new RuntimeException("Tipo invalido: " + id.getText() + " é " + symbolTable.get(id.getText()).getNomeTipo(symbolTable.get(id.getText()).getTipo()) );
 						
 						conteudo = "int [] ";
 						atribHelper(id.getText());
@@ -469,7 +471,7 @@ public MeuParser(ParserSharedInputState state) {
 						else if (symbolTable.get(id.getText()).getTipo() == 6)
 						symbolTable.get(id.getText()).setValor(LT(0).getText());
 						else
-						throw new RuntimeException("Tipo invalido: " + id.getText());
+						throw new RuntimeException("Tipo invalido: " + id.getText() + " é " + symbolTable.get(id.getText()).getNomeTipo(symbolTable.get(id.getText()).getTipo()) );
 						
 						conteudo = "int [][] ";
 						atribHelper(id.getText());
@@ -487,7 +489,7 @@ public MeuParser(ParserSharedInputState state) {
 							else if (symbolTable.get(id.getText()).getTipo() == 3)
 							symbolTable.get(id.getText()).setValor(LT(0).getText());
 							else
-							throw new RuntimeException("Tipo invalido: " + id.getText());
+							throw new RuntimeException("Tipo invalido: " + id.getText() + " é " + symbolTable.get(id.getText()).getNomeTipo(symbolTable.get(id.getText()).getTipo()) );
 							atribHelper(id.getText());
 							
 						}
@@ -505,7 +507,7 @@ public MeuParser(ParserSharedInputState state) {
 							else if (symbolTable.get(id.getText()).getTipo() == 2)
 							symbolTable.get(id.getText()).setValor(resultCalc2);
 							else
-							throw new RuntimeException("Tipo invalido: " + id.getText());
+							throw new RuntimeException("Tipo invalido: " + id.getText() + " é " + symbolTable.get(id.getText()).getNomeTipo(symbolTable.get(id.getText()).getTipo()) );
 							
 							atribHelper(id.getText());
 							calcular = false;
@@ -531,7 +533,7 @@ public MeuParser(ParserSharedInputState state) {
 							else if (symbolTable.get(id.getText()).getTipo() == 2)
 							symbolTable.get(id.getText()).setValor(LT(0).getText());
 							else
-							throw new RuntimeException("Tipo invalido: " + id.getText());
+							throw new RuntimeException("Tipo invalido: " + id.getText() + " é " + symbolTable.get(id.getText()).getNomeTipo(symbolTable.get(id.getText()).getTipo()) );
 							atribHelper(id.getText());
 							
 						}

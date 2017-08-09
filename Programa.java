@@ -24,9 +24,6 @@ public class Programa{
         this.comandos.add(cmd);
     }
     
-    public void run(){
-        
-    }
     public String writeCode(){
         StringBuilder str = new StringBuilder();
         try{

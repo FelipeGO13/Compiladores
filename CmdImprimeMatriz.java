@@ -7,10 +7,6 @@ public class CmdImprimeMatriz extends Comando{
         this.content = content;
     }
 
-    public void run(){
-        
-    }
-    
     public void setTipo(int tipo){
         this.tipo = tipo;
     }

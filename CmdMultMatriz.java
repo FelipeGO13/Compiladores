@@ -13,10 +13,6 @@ public class CmdMultMatriz extends Comando{
         
     }
 
-    public void run(){
-        
-    }
-    
     public void setTipo(int tipo){
         this.tipo = tipo;
     }
